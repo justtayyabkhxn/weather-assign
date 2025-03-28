@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.task-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.task-input input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.task-input select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.task-input select:focus {
+  border-color: #007bff;
+}
+
+.task-input button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-input button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .task-input {
+    padding: 15px;
+  }
+
+  .task-input input,
+  .task-input select,
+  .task-input button {
+    font-size: 14px;
+  }
+}
+.task-list {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.task.low {
+  background: #e3fcef;
+  border-left: 5px solid #28a745;
+  color: #155724;
+}
+
+.task.medium {
+  background: #fff3cd;
+  border-left: 5px solid #ffc107;
+  color: #856404;
+}
+
+.task.high {
+  background: #f8d7da;
+  border-left: 5px solid #dc3545;
+  color: #721c24;
+}
+
+.task button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.task button:hover {
+  background: #c82333;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin-left: 10px;
+}
+
+.weather-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .task {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task button {
+    align-self: flex-end;
+  }
+}
+
+
+.login-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-container input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+}
