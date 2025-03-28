@@ -192,3 +192,26 @@ body {
   background: #007bff;
   color: white;
 }
+
+.logout-button {
+  background: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  margin-top: 20px;
+}
+
+/* Hover effect */
+.logout-button:hover {
+  background: #e63946;
+  box-shadow: 0 2px 6px rgba(230, 57, 70, 0.4);
+}
+
