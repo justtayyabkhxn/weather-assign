@@ -2,8 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "./store/authSlice";
 import Login from "./Components/Login";
-import TaskInput from "./components/TaskInput";
-import TaskList from "./components/TaskList";
+import TaskInput from "./Components/TaskInput";
+import TaskList from "./Components/TaskList";
 
 const App = () => {
   const { isAuthenticated, user } = useSelector((state) => state.auth);
